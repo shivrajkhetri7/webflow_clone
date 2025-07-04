@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Square from './components/Square'
+import Square from './components/Square';
 
 function App() {
   const squareStyle = [
@@ -40,7 +40,6 @@ function App() {
               <Square title={item?.text} key={index} bgColor={item?.bgColor} textColor={item?.textColor} paragraph={item?.paragraph} />
             ))
           }
-
         </div>
       </main>
     </React.Fragment>

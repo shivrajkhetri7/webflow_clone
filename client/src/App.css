@@ -6,76 +6,52 @@ main {
   overflow-y: hidden;
   scroll-behavior: smooth;
   width: 100vw;
-}
-
-main .container {
-  margin: 50px 0 50px 0px;
-  padding: 0px;
-  box-sizing: border-box;
   height: 100%;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px 50px;
-}
 
-main .container .squar {
-  padding: 20px;
-  border-radius: 16px;
-  width: 80vw;
-  height: 90vh;
-  font-weight: 900;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: start;
-  font-size: 100px;
-}
+  .container {
+    z-index: 1;
+    margin: 50px 0 50px 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px 50px;
 
-main .container .squar p {
-  font-size: 16px;
-  color: #fff;
-  margin-top: 10px;
-  font-weight: 300;
-}
 
-main .container .squar p .btn {
-  margin: 0 0 20px 10px;
-  background: transparent;
-  border: 1px solid #fff;
-  padding: 10px 20px;
-  border-radius: 16px;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  font-weight: 300;
-}
+    .squar {
+      padding: 20px;
+      border-radius: 16px;
+      width: 80vw;
+      height: 90vh;
+      font-weight: 900;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: start;
+      font-size: 100px;
 
-/* Mobile devices */
-@media (max-width: 600px) {
-  main .container .squar {
-    width: 95vw;
-    height: 60vh;
-    font-size: 40px;
-    padding: 10px;
+      p {
+        font-size: 16px;
+        color: #fff;
+        margin-top: 10px;
+        font-weight: 300;
+
+        .btn {
+          margin: 0 0 20px 10px;
+          background: transparent;
+          border: 1px solid #fff;
+          padding: 10px 20px;
+          border-radius: 16px;
+          color: #fff;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          font-weight: 300;
+        }
+      }
+    }
   }
-  main .container {
-    gap: 20px 0;
-  }
-}
 
-/* Tablets */
-@media (min-width: 601px) and (max-width: 900px) {
-  main .container .squar {
-    width: 90vw;
-    height: 70vh;
-    font-size: 60px;
-    padding: 15px;
-  }
-  main .container {
-    gap: 30px 0;
-  }
 }
-
-/* Desktop (default styles already apply) */
